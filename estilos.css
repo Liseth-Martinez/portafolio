@@ -1,180 +1,343 @@
-/* CONFIGURACIÓN GENERAL */
+/* =====================================
+   🌸 CONFIGURACIÓN GENERAL
+===================================== */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #0d1117;
-    color: white;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #fff5f7, #fce4ec, #f3e5f5);
+    color: #654b5a;
 }
 
-/* ENCABEZADO */
+/* =====================================
+   🌷 ENCABEZADO
+===================================== */
+
 header {
-    background-color: #161b22;
-    padding: 20px 8%;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 22px 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 4px 20px rgba(214, 139, 169, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    backdrop-filter: blur(10px);
 }
 
 header h2 {
-    color: #58a6ff;
+    color: #d477a0;
+    font-size: 25px;
 }
 
 nav a {
-    color: white;
+    color: #805c70;
     text-decoration: none;
-    margin-left: 20px;
+    margin-left: 25px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    color: #58a6ff;
+    color: #d477a0;
 }
 
-/* PRESENTACIÓN */
+/* =====================================
+   💗 PRESENTACIÓN
+===================================== */
+
 .presentacion {
     text-align: center;
-    padding: 60px 20px;
+    padding: 35px 20px 20px;
+    background: linear-gradient(135deg, #ffe4ec, #f9e5f5, #fff0f5);
+    border-radius: 0 0 60px 60px;
 }
 
 .presentacion img {
-    width: 150px;
-    height: 150px;
+    width: 185px;
+    height: 185px;
     border-radius: 50%;
-    border: 4px solid #58a6ff;
+    border: 6px solid white;
     object-fit: cover;
+    box-shadow: 0 8px 25px rgba(204, 120, 158, 0.3);
+    transition: transform 0.4s;
+}
+
+.presentacion img:hover {
+    transform: scale(1.07);
 }
 
 .presentacion h1 {
-    margin: 20px;
-    font-size: 35px;
+    margin: 25px 0 15px;
+    font-size: 42px;
+    color: #bd648d;
 }
 
 .presentacion p {
-    margin-bottom: 25px;
-    color: #c9d1d9;
+    margin-bottom: 30px;
+    color: #806579;
+    font-size: 17px;
 }
 
 .presentacion a {
-    background-color: #238636;
+    display: inline-block;
+    background: linear-gradient(135deg, #e99bb8, #c995d8);
     color: white;
-    padding: 12px 20px;
-    border-radius: 8px;
+    padding: 14px 25px;
+    border-radius: 30px;
     text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(203, 130, 167, 0.25);
+    transition: 0.3s;
 }
 
-/* REPOSITORIOS */
+.presentacion a:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(203, 130, 167, 0.35);
+}
+
+/* =====================================
+   🌸 REPOSITORIOS
+===================================== */
+
 #repositorios {
-    padding: 50px 8%;
+    padding: 25px 8% 20px;
     text-align: center;
+}
+
+#repositorios h2,
+#tecnologias h2 {
+    color: #bd648d;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+#repositorios > p {
+    color: #896f81;
+    font-size: 16px;
 }
 
 .repositorios {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 20px;
-    margin-top: 30px;
+    gap: 25px;
+    margin-top: 40px;
 }
 
 .tarjeta {
-    background-color: #161b22;
-    border: 1px solid #30363d;
-    padding: 25px;
-    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid #f4cbd9;
+    padding: 28px;
+    border-radius: 22px;
     text-align: left;
+    box-shadow: 0 6px 20px rgba(201, 139, 169, 0.12);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(201, 139, 169, 0.22);
 }
 
 .tarjeta h3 {
-    color: #58a6ff;
-    margin-bottom: 15px;
+    color: #c16e98;
+    margin-bottom: 18px;
+    overflow-wrap: anywhere;
 }
 
 .tarjeta p {
-    color: #c9d1d9;
+    color: #806b7a;
     margin-bottom: 15px;
+    line-height: 1.5;
 }
 
 .tarjeta button {
-    background-color: #238636;
+    background: #e9a3bf;
     color: white;
     border: none;
-    padding: 10px;
-    border-radius: 6px;
+    padding: 11px 17px;
+    border-radius: 20px;
     cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-/* TECNOLOGÍAS */
+.tarjeta button:hover {
+    background: #c77da2;
+    transform: scale(1.05);
+}
+
+.tarjeta a {
+    color: #b36b9b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tarjeta a:hover {
+    color: #885b9e;
+    text-decoration: underline;
+}
+
+/* =====================================
+   🦋 TECNOLOGÍAS
+===================================== */
+
 #tecnologias {
-    padding: 50px 8%;
+    padding: 25px 8% 35px;
     text-align: center;
+    background: linear-gradient(135deg, #fce4ec, #f3e5f5);
+    border-radius: 55px 55px 0 0;
 }
 
 .iconos {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 40px;
-    margin-top: 30px;
+    gap: 35px;
+    margin-top: 40px;
+}
+
+.iconos > div {
+    background: white;
+    padding: 25px;
+    min-width: 125px;
+    border-radius: 20px;
+    box-shadow: 0 5px 18px rgba(201, 139, 169, 0.15);
+    transition: 0.3s;
+}
+
+.iconos > div:hover {
+    transform: translateY(-7px);
 }
 
 .iconos i {
     font-size: 45px;
-    color: #58a6ff;
+    color: #ce83aa;
 }
 
 .iconos p {
-    margin-top: 10px;
+    margin-top: 12px;
+    color: #806579;
+    font-weight: bold;
 }
 
-/* VENTANA DE DIÁLOGO */
+/* =====================================
+   💌 VENTANA DE DIÁLOGO
+===================================== */
+
 dialog {
-    background-color: #161b22;
-    color: white;
-    border: 1px solid #58a6ff;
-    border-radius: 12px;
-    padding: 30px;
+    background: #fff8fb;
+    color: #76566b;
+    border: 2px solid #efc2d5;
+    border-radius: 22px;
+    padding: 35px;
     margin: auto;
     max-width: 400px;
+    width: 90%;
+    box-shadow: 0 10px 40px rgba(160, 100, 135, 0.2);
+}
+
+dialog h2 {
+    color: #bd648d;
+    margin-bottom: 15px;
 }
 
 dialog::backdrop {
-    background-color: rgba(0, 0, 0, 0.8);
+    background: rgba(100, 65, 85, 0.45);
 }
 
 dialog button {
     margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #238636;
+    padding: 11px 22px;
+    background: #df91b1;
     color: white;
     border: none;
-    border-radius: 6px;
+    border-radius: 20px;
     cursor: pointer;
 }
 
-/* PIE DE PÁGINA */
+/* =====================================
+   🌼 PIE DE PÁGINA
+===================================== */
+
 footer {
-    background-color: #161b22;
+    background: #f8dce8;
     text-align: center;
-    padding: 25px;
+    padding: 30px;
     margin-top: 40px;
+    color: #805c70;
 }
 
 footer a {
-    color: #58a6ff;
+    color: #bd648d;
     text-decoration: none;
+    font-weight: bold;
 }
 
-/* ADAPTACIÓN A CELULARES */
+/* =====================================
+   ✨ ANIMACIONES
+===================================== */
+
+.tarjeta,
+.iconos > div {
+    animation: aparecer 0.7s ease;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =====================================
+   📱 ADAPTACIÓN A CELULARES
+===================================== */
+
 @media (max-width: 600px) {
+
     header {
         flex-direction: column;
-        gap: 20px;
+        gap: 18px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
     }
 
     nav a {
-        margin: 8px;
+        margin: 5px;
+    }
+
+    .presentacion {
+        padding: 60px 15px;
+    }
+
+    .presentacion h1 {
+        font-size: 30px;
+    }
+
+    #repositorios,
+    #tecnologias {
+        padding: 50px 6%;
+    }
+
+    .iconos {
+        gap: 15px;
     }
 }
