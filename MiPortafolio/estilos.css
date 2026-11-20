@@ -1,0 +1,180 @@
+/* CONFIGURACIÓN GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d1117;
+    color: white;
+}
+
+/* ENCABEZADO */
+header {
+    background-color: #161b22;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    color: #58a6ff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #58a6ff;
+}
+
+/* PRESENTACIÓN */
+.presentacion {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.presentacion img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #58a6ff;
+    object-fit: cover;
+}
+
+.presentacion h1 {
+    margin: 20px;
+    font-size: 35px;
+}
+
+.presentacion p {
+    margin-bottom: 25px;
+    color: #c9d1d9;
+}
+
+.presentacion a {
+    background-color: #238636;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+/* REPOSITORIOS */
+#repositorios {
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.repositorios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.tarjeta {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.tarjeta h3 {
+    color: #58a6ff;
+    margin-bottom: 15px;
+}
+
+.tarjeta p {
+    color: #c9d1d9;
+    margin-bottom: 15px;
+}
+
+.tarjeta button {
+    background-color: #238636;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* TECNOLOGÍAS */
+#tecnologias {
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.iconos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.iconos i {
+    font-size: 45px;
+    color: #58a6ff;
+}
+
+.iconos p {
+    margin-top: 10px;
+}
+
+/* VENTANA DE DIÁLOGO */
+dialog {
+    background-color: #161b22;
+    color: white;
+    border: 1px solid #58a6ff;
+    border-radius: 12px;
+    padding: 30px;
+    margin: auto;
+    max-width: 400px;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+dialog button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #238636;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background-color: #161b22;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #58a6ff;
+    text-decoration: none;
+}
+
+/* ADAPTACIÓN A CELULARES */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav a {
+        margin: 8px;
+    }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio GitHub</title>
+
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="estilos.css">
+
+    <!-- Iconos -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h2><i class="fab fa-github"></i> Mi GitHub</h2>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#repositorios">Repositorios</a>
+            <a href="#tecnologias">Tecnologías</a>
+        </nav>
+    </header>
+
+    <!-- PRESENTACIÓN -->
+    <section id="inicio" class="presentacion">
+
+        <img id="fotoPerfil" src="https://placehold.co/150"
+        alt="Foto de perfil">
+
+        <h1 id="nombre">Mi Portafolio</h1>
+
+        <p id="descripcion">
+            Bienvenido a mi espacio de programación.
+            Aquí encontrarás mis proyectos y trabajos.
+        </p>
+
+        <a id="perfilGitHub" href="#" target="_blank">
+            <i class="fab fa-github"></i> Visitar mi GitHub
+        </a>
+
+    </section>
+
+    <!-- REPOSITORIOS -->
+    <section id="repositorios">
+
+        <h2>Mis repositorios</h2>
+
+        <p>Estos son algunos de mis proyectos en GitHub.</p>
+
+        <div id="contenedorRepos" class="repositorios">
+            <!-- JavaScript cargará los repositorios aquí -->
+        </div>
+
+    </section>
+
+    <!-- TECNOLOGÍAS -->
+    <section id="tecnologias">
+
+        <h2>Tecnologías</h2>
+
+        <div class="iconos">
+
+            <div><i class="fab fa-html5"></i><p>HTML</p></div>
+
+            <div><i class="fab fa-css3-alt"></i><p>CSS</p></div>
+
+            <div><i class="fab fa-js"></i><p>JavaScript</p></div>
+
+            <div><i class="fab fa-python"></i><p>Python</p></div>
+
+            <div><i class="fab fa-java"></i><p>Java</p></div>
+
+            <div><i class="fab fa-github"></i><p>GitHub</p></div>
+
+        </div>
+
+    </section>
+
+    <!-- VENTANA DE DIÁLOGO -->
+    <dialog id="ventana">
+        <h2>Información del proyecto</h2>
+        <p id="detalleProyecto"></p>
+        <button id="cerrarVentana">Cerrar</button>
+    </dialog>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>© 2026 Mi Portafolio | Creado con HTML, CSS y JavaScript</p>
+        <a id="enlaceFooter" href="#" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
